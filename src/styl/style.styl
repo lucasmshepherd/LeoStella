@@ -1,0 +1,116 @@
+body
+    background #fefefe
+    margin 0
+    padding 0
+    color #1d242d
+    font-family Montserrat, sans-serif;
+
+a
+    text-decoration none
+*
+    box-sizing border-box
+
+header
+    display flex
+    flex-flow row nowrap
+    justify-content flex-start
+    align-items center
+    align-content stretch
+    background-color white
+    padding 0 20px
+    font-size 15px
+    nav
+        flex: 1 0 auto
+        display flex
+        flex-flow row nowrap
+        justify-content flex-end
+        ul
+            flex 0 1 auto
+            min-height 50px
+            flex 1 0 auto
+            text-align right
+            display inline-flex
+            flex-flow row nowrap
+            justify-content flex-end
+            align-items center
+            li
+                list-style-type none
+                padding 0 1.2vw
+                a
+                    display block
+                    padding 12px 15px
+                    border-bottom 2px solid transparent
+                    border-top 2px solid transparent
+                    color #808080
+                    &:hover,
+                    &:active
+                        color #a1ccf7
+                    &.logo
+                        flex 0 1 auto
+
+main
+    background #010101
+
+.container
+    max-width 1200px
+    width 100%
+    margin 0 auto
+    padding 0 20px
+
+.job-board
+    padding 60px 0
+
+    & > *
+        padding 30px
+        background rgba(255,255,255,.2)
+        margin 15px 0
+        border-radius 6px
+footer
+    font-size 15px
+    padding 15px 0
+
+    .container
+        display flex
+        flex-flow wrap
+        justify-content flex-start
+        align-items stretch
+        align-content stretch
+        & > *
+            flex 0 1 240px
+            &:nth-child(3)
+                flex 1 0 auto
+            
+            @media (max-width: 1200px)
+                flex 0 1 50%
+            
+            @media (max-width: 768px)
+                flex 1 1 100%
+
+
+    .foot-menu
+        ul
+            li
+                list-style-type none
+                padding 10px 0
+
+                a 
+                    padding 10px 15px
+                    font-size 70%
+                    color inherit
+
+    .foot-right
+        display flex
+        flex-flow nowrap
+        justify-content flex-end
+        align-items stretch
+        align-content stretch
+
+        @media (max-width: 1200px)
+            & > *
+                flex 1 0 50%
+
+        ul
+            li
+                list-style-type none
+                a 
+                    color inherit
