@@ -4,6 +4,7 @@ body
     padding 0
     color #1d242d
     font-family Montserrat, sans-serif;
+    font-size 16px
 
 a
     text-decoration none
@@ -26,7 +27,7 @@ header
         justify-content flex-end
         ul
             flex 0 1 auto
-            min-height 50px
+            min-height 80px
             flex 1 0 auto
             text-align right
             display inline-flex
@@ -36,6 +37,7 @@ header
             li
                 list-style-type none
                 padding 0 1.2vw
+                margin 0
                 a
                     display block
                     padding 12px 15px
@@ -49,22 +51,131 @@ header
                         flex 0 1 auto
 
 main
-    background #010101
-
+    background-color #010101
+    background-size cover
+    background-position center center
+a.app-button
+    margin 20px 0 60px
+    display inline-block
+    color #a4cef9
+    font-weight bold
+    text-transform uppercase
 .container
     max-width 1200px
     width 100%
     margin 0 auto
-    padding 0 20px
-
+    padding 60px 20px
+.job-app
+    padding 60px
+    background #fff
+    position relative
+    border-radius 6px
+.job-detail
+    padding 60px
+    background rgba(0,0,0,.75)
+    color #fff
+    position relative
+    border-radius 6px
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6
+        margin-top 2em!important
+        margin-bottom 1em!important
+        line-height 1.2!important
+        span
+            color #fff!important
+            font-family "Montserrat", sans-serif !important
+    h1
+        span
+            font-size 32px!important
+            font-weight bold
+    h2
+        span
+            font-size 28px!important
+            font-weight bold
+    h3
+        span
+            font-size 24px!important
+    h4
+        span
+            font-size 22px!important
+    h5
+        span
+            font-size 20px!important
+    h6
+        span
+            font-size 18px!important
+    p,
+    ul li
+        span
+            font-size 16px!important
+            line-height 22px!important
+            font-weight normal!important
+            color rgba(255,255,255,.7)!important
+            font-family "Montserrat", sans-serif !important
+    ul.jd-items
+        padding 0
+        margin 0
+        li
+            list-style-type none
+            b
+                min-width 150px
+                display inline-block
+    
+    #resumator-share-links
+        float none
+        position absolute
+        top 20px
+        right 20px
+        li
+            list-style-type none
+            a
+                color #a4cef9
 .job-board
     padding 60px 0
-
-    & > *
+    .notifications
+        resumator > *
+            padding 20px
+    .intro
+        padding-left 20px
+        border-left 1px solid #fff
+        font-size 24px
+        line-height 30px
+        text-transform uppercase
+        color #fff
+    .jobs
         padding 30px
-        background rgba(255,255,255,.2)
+        background rgba(0,0,0,.75)
         margin 15px 0
         border-radius 6px
+        table
+            width 100%
+            color #fff
+            font-size 18px
+            tr:nth-child(2)
+                td
+                    padding-top 50px
+            th
+                padding 20px
+                background rgba(0,0,0,.5)
+                border-radius 6px
+                text-align left
+                border 1px solid rgba(255,255,255,.06)
+                color rgba(255,255,255,.4)
+            td
+                padding 20px
+                a
+                    color #a4cef9
+                    font-weight bold
+                &.resumator-job-location-column
+                    text-align center
+                &.resumator-department-column
+                    font-size 90%
+                    color rgba(255,255,255,.4)
+                    text-align center
 footer
     font-size 15px
     padding 15px 0
